@@ -1,5 +1,10 @@
 import { router } from '@kit.ArkUI'
 
+@Builder
+function defaultBuilder(): void {
+
+}
+
 @Component
 export struct HdNav {
   @StorageProp('topHeight')
@@ -15,14 +20,9 @@ export struct HdNav {
   @Prop
   showRightIcon: boolean = true
   @BuilderParam
-  titleBuilder: () => void
+  titleBuilder: () => void = defaultBuilder
   @BuilderParam
-  menuBuilder: () => void = this.defaultMenu
-
-  @Builder
-  defaultMenu() {
-
-  }
+  menuBuilder: () => void = defaultBuilder
 
   build() {
     Row({ space: 16 }) {

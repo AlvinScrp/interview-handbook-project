@@ -4,10 +4,15 @@ export enum HdSkeletonType {
   IMAGE
 }
 
+@Builder
+function defaultBuilder() {
+
+}
+
 @Component
 export struct HdSkeleton {
   @BuilderParam
-  default: () => void
+  default: () => void = defaultBuilder
   // 透明度
   @State
   opacityValue: number = 1
