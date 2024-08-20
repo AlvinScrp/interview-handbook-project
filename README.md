@@ -7,7 +7,10 @@
 A brushing application for front-end programmers, providing front-end frequently met questions, project business
 interview questions, interview experience and other content services.
 
-HarmonyOS NEXT https://github.com/HarmonyOS-Next/interview-handbook-project
+HarmonyOS NEXT
+
+- document https://zhousg.atomgit.net/interview_success/
+- code https://github.com/HarmonyOS-Next/interview-handbook-project
 
 HarmonyOS 4.0
 
